@@ -1,6 +1,8 @@
 # 📱 Tela de Login - Aplicativo de Devocionais
 
-![Print da Tela](INSIRA_O_LINK_DA_IMAGEM_AQUI)
+
+<img src="https://github.com/hildocosta/login-app-devocional/raw/main/Screenshot_20251123_173355_Expo%20Go.jpg" alt="Print da Tela de Login" width="300" />
+
 
 
 
