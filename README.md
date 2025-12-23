@@ -1,91 +1,80 @@
-# 📱 Tela de Login - Aplicativo de Devocionais
+# 📱 Aplicativo de Devocionais
 
-
-<img src="https://github.com/hildocosta/login-app-devocional/raw/main/Screenshot_20251123_173355_Expo%20Go.jpg" alt="Print da Tela de Login" width="300" />
-
-
-
-
-## 🔹 Sobre o Projeto
-
-Este repositório contém a **tela de login profissional** de um aplicativo de devocionais, desenvolvido de forma **autoral**.  
-O projeto nasceu da necessidade da minha esposa de registrar seus devocionais diariamente em um aplicativo simples e funcional.  
-
-> **Objetivo atual:** Foco no desenvolvimento da tela de login, garantindo **design moderno, usabilidade e segurança**.  
-> Futuramente, o aplicativo permitirá salvar devocionais em banco de dados, mas esta etapa é dedicada ao login.
+<div align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</div>
 
 ---
 
-## 🚀 Funcionalidades da Tela de Login
+## 🔹 Sobre o Projeto
 
-- **Autenticação segura:** Integração com serviço de login (simulado/real).  
-- **Inputs personalizados e seguros:**  
-  - **EmailInput**: Validação completa de formato de e-mail.  
-  - **PasswordInput**: Validação avançada de senha (mínimo 8 caracteres, letras maiúsculas e minúsculas, números e caracteres especiais).  
-  - Campos de senha com possibilidade de mostrar/esconder.  
-  - Desabilitação de autocomplete, sugestões automáticas e menu de contexto para segurança extra.  
-- **Botão de login animado:**  
-  - Animação de escala ao pressionar.  
-  - Indicador de carregamento (`loading`) ao processar login.  
-- **Design profissional e consistente:**  
-  - **Cores centralizadas** em `LoginColors.js`.  
-  - **Estilos unificados** em `LoginStyles.js` para manutenção fácil e consistente.  
-- **Experiência de usuário otimizada:**  
-  - `KeyboardAvoidingView` e `ScrollView` para telas de diferentes tamanhos.  
-  - Inputs focados e navegação do teclado entre campos.  
+Este é um projeto autoral focado em design profissional, usabilidade e segurança. O aplicativo nasceu de uma necessidade real: permitir que minha esposa registre seus devocionais diariamente em uma ferramenta simples, funcional e segura.
+
+O que começou como um estudo de telas de login evoluiu para uma aplicação completa com fluxo de autenticação, perfil de usuário e gerenciamento de dados.
+
+## 🎯 Objetivo do Projeto
+
+* **Registro Diário:** Facilitar a escrita e organização de devocionais.
+* **UX/UI Premium:** Experiência intuitiva, fluida e acessível.
+* **Segurança:** Implementar camadas de validação e biometria.
+* **Escalabilidade:** Estrutura preparada para manutenção e novas funcionalidades.
+
+---
+
+## 📱 Funcionalidades & Telas
+
+### 🔰 Inicialização
+* **Splash Screen:** Transição suave e profissional.
+* **Welcome Screen:** Boas-vindas personalizada após o login.
+
+### 🔐 Autenticação & Segurança
+* **Login Avançado:** Validação de e-mail/senha em tempo real com botões animados.
+* **Biometria:** Integração com autenticação biométrica (Digital/FaceID).
+* **Fluxo de Recuperação:** Sistema de esqueci a senha com validação de código via e-mail.
+
+### 👤 Perfil e Gestão de Devocionais
+* **Dashboard:** Contador de registros e visualização flexível (Lista ou Grid).
+* **Interatividade:** Os cards de devocionais abrem em um **Modal de Leitura** exclusivo, proporcionando um foco maior no conteúdo.
+* **Multimídia:** Ao criar um novo devocional, o usuário pode enriquecer sua publicação acessando a **Galeria** ou a **Câmera** do dispositivo para incluir imagens.
+
+### ⚠️ Componentes Customizados
+* **Modais Personalizados:** Sistema de avisos para erros, sucessos e validações, garantindo padronização visual em todo o app.
 
 ---
 
 ## 💻 Tecnologias Utilizadas
 
-- **React Native**  
-- **Expo / Expo Router**  
-- **Biblioteca de ícones:** `@expo/vector-icons`  
-- **Hooks do React:** `useState`, `useEffect`, `useRef`  
-- **JavaScript modular e limpo**  
+* **Framework:** [React Native](https://reactnative.dev/)
+* **Plataforma:** [Expo](https://expo.dev/) (Expo Router para navegação)
+* **Recursos Nativos:** Câmera, Galeria de Fotos e Biometria.
+* **Lógica:** React Hooks (`useState`, `useEffect`, `useRef`)
+* **Estilização:** JavaScript Modular (StyleSheet)
 
 ---
 
-## 🗂 Estrutura de Pastas
+## 🔧 Diferenciais Técnicos & Refatoração
 
-```plaintext
-frontend/
-├── components/
-│   ├── buttons/
-│   │   └── ButtonPrimaryAnimated.js
-│   ├── inputs/
-│   │   ├── EmailInput.js
-│   │   └── PasswordInput.js
-│   ├── colors/
-│   │   └── LoginColors.js
-│   └── styles/
-│       └── LoginStyles.js
-└── service/
-    └── UsuarioService.js
-```
+* **Integração com Hardware:** Manipulação de permissões para uso de câmera e arquivos.
+* **Design Responsivo:** Adaptado para diferentes tamanhos de tela.
+* **Consistência Visual:** Centralização de paleta de cores e tipografia.
+* **Segurança de Dados:** Inputs de senha ocultos e validação rigorosa.
+    * Bloqueio de corretores automáticos em campos sensíveis.
 
-## Refatorações e Melhorias Implementadas
+---
 
-- Centralização de cores e estilos para facilitar manutenção e consistência visual.
-- Refatoração completa dos componentes de input e botão.
-- Validações avançadas de e-mail e senha com feedback imediato.
-- Medidas de segurança implementadas nos inputs de senha.
-- Botão animado profissional com feedback visual e indicador de carregamento.
-- Design responsivo e compatível com diferentes dispositivos móveis.
+## ⚡ Observações Futuras
 
-### 🔐 Segurança
+O projeto continua em evolução. 
 
-- Campos de senha ocultos por padrão, com opção de visualização temporária.
-- Desativação de autocomplete, correção automática e menu de contexto para senha.
-- Validações avançadas impedem envio de dados inválidos.
+---
 
-### ⚡ Observações
+## ✨ Contato
 
-- Este é um projeto autoral, criado para atender a necessidade pessoal de registro de devocionais.
-- O foco principal é a tela de login profissional e segura.
-- Futuras implementações incluirão cadastro, recuperação de senha e gerenciamento de devocionais.
+Desenvolvido por **Hildo Costa**
 
-  ### ✨ Contato
+[![Gmail Badge](https://img.shields.io/badge/-hyldo.costa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hyldo.costa@gmail.com)](mailto:hyldo.costa@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/)](https://www.linkedin.com/)
 
-Desenvolvido por **Hildo Costa**  
-📧 Email: hyldo.costa@gmail.com
+---
